@@ -1,0 +1,1376 @@
+T46FC 000:011.708   SEGGER J-Link V9.42 Log File
+T46FC 000:013.948   DLL Compiled: May  6 2026 12:25:27
+T46FC 000:015.156   Logging started @ 2026-08-05 22:56
+T46FC 000:016.060   Process: C:\Users\a5158373\.eclipse\com.renesas.platform_599915656\DebugComp\RA\e2-server-gdb.exe
+T46FC 000:016.592 - 16.582ms
+T46FC 000:017.137 JLINK_GetDLLVersion()
+T46FC 000:017.596 - 0.458ms returns 94200
+T46FC 000:029.120 JLINK_OpenEx(...)
+T46FC 000:047.782   Firmware: J-Link OB-RA4M2 compiled Dec 10 2025 15:52:53
+T46FC 000:050.567   Firmware: J-Link OB-RA4M2 compiled Dec 10 2025 15:52:53
+T46FC 000:066.337   Hardware: V1.00
+T46FC 000:068.336   S/N: 1082021130
+T46FC 000:070.398   OEM: SEGGER
+T46FC 000:072.033   Feature(s): None
+T46FC 000:074.200   Bootloader: 2021 May 14
+T46FC 000:075.746   USB speed mode: Full speed (12 MBit/s)
+T46FC 000:079.026   TELNET listener socket opened on port 19021
+T46FC 000:082.322   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T46FC 000:085.106   WEBSRV Webserver running on local port 19080
+T46FC 000:087.375   Looking for J-Link GUI Server exe at: C:\Users\a5158373\.eclipse\com.renesas.platform_599915656\DebugComp\RA\ARM\Segger_v9.42.0\JLinkGUIServer.exe
+T46FC 000:089.418   Looking for J-Link GUI Server exe at: C:\Users\a5158373\SEGGER\JLink\JLinkGUIServer.exe
+T46FC 000:091.536   Forking J-Link GUI Server: C:\Users\a5158373\SEGGER\JLink\JLinkGUIServer.exe
+T46FC 000:524.381   J-Link GUI Server info: "J-Link GUI server V9.34a "
+T46FC 000:532.673 - 503.549ms returns "O.K."
+T46FC 000:534.159 JLINK_ExecCommand("ProjectFile=\\wsl.localhost\Debian\home\stein\src\Debounce_tester\examples\e2studio\debounce_freertos_fpb_ra2e3/debounce_freertos_fpb_ra2e3.elf.jlink", ...).
+T46FC 000:579.399 - 45.205ms returns 0x00
+T46FC 000:584.079 JLINK_ExecCommand("device=R7FA2E307", ...).
+T46FC 000:585.818   Flash bank @ 0x01010010: SFL: Parsing sectorization info from ELF file
+T46FC 000:586.557     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000024, .SectorStartAddr = 0x00000000
+T46FC 000:587.184   FlashBank @0x01010010: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T46FC 000:588.065   Device "R7FA2E307" selected.
+T46FC 000:590.643 - 6.563ms returns 0x00
+T46FC 000:591.524 JLINK_ExecCommand("SetCPUConnectIDCODE = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", ...).
+T46FC 000:592.173 - 0.648ms returns 0x00
+T46FC 000:592.535 JLINK_TIF_GetAvailable(...)
+T46FC 000:593.098 - 0.562ms
+T46FC 000:593.681 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T46FC 000:595.153 - 1.478ms returns 0x00
+T46FC 000:596.311 JLINK_SetSpeed(4000)
+T46FC 000:597.214 - 0.906ms
+T46FC 000:597.653 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
+T46FC 000:597.995 - 0.342ms returns 0
+T46FC 000:598.520 JLINK_SetInitRegsOnReset(OFF)
+T46FC 000:598.848 - 0.328ms returns 1
+T46FC 000:599.164 JLINK_SetResetType(JLINKARM_RESET_TYPE_NO_RESET)
+T46FC 000:599.598 - 0.433ms returns JLINKARM_RESET_TYPE_NORMAL
+T46FC 000:599.952 JLINK_ExecCommand("EnableFlashBPs", ...).
+T46FC 000:600.263 - 0.310ms returns 0x00
+T46FC 000:600.590 JLINK_ExecCommand("SetAllowFlashCache = 1", ...).
+T46FC 000:601.011 - 0.421ms returns 0x01
+T46FC 000:601.335 JLINK_ExecCommand("SetRestartOnClose = 0", ...).
+T46FC 000:601.661 - 0.325ms returns 0x01
+T46FC 000:602.037 JLINK_ExecCommand("SetAllowSimulation = 0", ...).
+T46FC 000:602.357 - 0.320ms returns 0x01
+T46FC 000:602.729 JLINK_EnableSoftBPs(ON)
+T46FC 000:603.042 - 0.315ms
+T46FC 000:603.504 JLINK_Connect()
+T46FC 000:604.794   InitTarget() start
+T46FC 000:605.702    J-Link Script File: Executing InitTarget()
+T46FC 000:606.109   Identifying target device...
+T46FC 000:606.778   SWD selected. Executing JTAG -> SWD switching sequence...
+T46FC 000:607.958   Initializing DAP...
+T46FC 000:609.455   DAP initialized successfully.
+T46FC 000:611.087   Low power mode detected. Waking device from low power mode.
+T46FC 000:614.907   InitTarget() end - Took 9.20ms
+T46FC 000:616.558   Found SW-DP with ID 0x5BA02477
+T46FC 000:619.126   DPIDR: 0x5BA02477
+T46FC 000:619.935   CoreSight SoC-400 or earlier
+T46FC 000:620.565   Scanning AP map to find all available APs
+T46FC 000:622.312   AP[2]: Stopped AP scan as end of AP map has been reached
+T46FC 000:623.097   AP[0]: AHB-AP (IDR: 0x74770001, ADDR: 0x00000000)
+T46FC 000:624.051   AP[1]: APB-AP (IDR: 0x44770002, ADDR: 0x01000000)
+T46FC 000:624.622   Iterating through AP map to find AHB-AP to use
+T46FC 000:625.911   AP[0]: Core found
+T46FC 000:626.490   AP[0]: AHB-AP ROM base: 0x4001A000
+T46FC 000:627.861   CPUID register: 0x411CD200. Implementer code: 0x41 (ARM)
+T46FC 000:629.458   Feature set: Baseline
+T46FC 000:630.900   Cache: No cache
+T46FC 000:631.965   Found Cortex-M23 r1p0, Little endian.
+T46FC 000:633.056   -- Max. mem block: 0x0001D908
+T46FC 000:634.348   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T46FC 000:635.485   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T46FC 000:636.648   CPU_ReadMem(4 bytes @ 0xE0002000)
+T46FC 000:637.739   FPUnit: 4 code (BP) slots and 0 literal slots
+T46FC 000:638.572   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T46FC 000:639.625   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T46FC 000:640.690   CPU_ReadMem(4 bytes @ 0xE0001000)
+T46FC 000:641.651   CPU_ReadMem(4 bytes @ 0xE0001000)
+T46FC 000:642.667   CPU_ReadMem(4 bytes @ 0xE0001028)
+T46FC 000:643.829   CPU_ReadMem(4 bytes @ 0xE0001038)
+T46FC 000:645.172   CPU_WriteMem(4 bytes @ 0xE0001000)
+T46FC 000:646.708   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T46FC 000:648.028   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T46FC 000:649.036   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T46FC 000:650.071   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T46FC 000:651.155   CPU_ReadMem(4 bytes @ 0xE000EFB8)
+T46FC 000:652.406   Security extension: not implemented
+T46FC 000:653.101   CoreSight components:
+T46FC 000:653.830   ROMTbl[0] @ 4001A000
+T46FC 000:654.479   CPU_ReadMem(64 bytes @ 0x4001A000)
+T46FC 000:655.950   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T46FC 000:657.451   CPU_ReadMem(4 bytes @ 0xE000EFBC)
+T46FC 000:658.688   CPU_ReadMem(4 bytes @ 0xE000EFCC)
+T46FC 000:660.583   [0][0]: E000E000 CID B105900D PID 000BBD20 DEVARCH 47702A04 DEVTYPE 00 Cortex-M23
+T46FC 000:661.685   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T46FC 000:664.020   CPU_ReadMem(4 bytes @ 0xE0001FBC)
+T46FC 000:665.634   CPU_ReadMem(4 bytes @ 0xE0001FCC)
+T46FC 000:667.026   [0][1]: E0001000 CID B105900D PID 000BBD20 DEVARCH 47701A02 DEVTYPE 00 DWT
+T46FC 000:668.554   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T46FC 000:670.769   CPU_ReadMem(4 bytes @ 0xE0002FBC)
+T46FC 000:672.102   CPU_ReadMem(4 bytes @ 0xE0002FCC)
+T46FC 000:673.120   [0][2]: E0002000 CID B105900D PID 000BBD20 DEVARCH 47701A03 DEVTYPE 00 FPB
+T46FC 000:674.031   CPU_ReadMem(32 bytes @ 0x40019FE0)
+T46FC 000:675.129   CPU_ReadMem(4 bytes @ 0x40019FBC)
+T46FC 000:676.314   CPU_ReadMem(4 bytes @ 0x40019FCC)
+T46FC 000:677.562   [0][3]: 40019000 CID B105900D PID 000BBD20 DEVARCH 47710A31 DEVTYPE 31 MTB
+T46FC 000:679.148 - 75.643ms returns 0x00
+T46FC 000:680.792 JLINK_Halt()
+T46FC 000:684.446 - 3.653ms returns 0x00
+T46FC 000:685.164 JLINK_IsHalted()
+T46FC 000:685.939 - 0.774ms returns TRUE
+T46FC 000:686.438 JLINK_ResetPullsRESET(ON)
+T46FC 000:687.000 - 0.561ms
+T46FC 000:687.696 JLINK_Reset()
+T46FC 000:688.281   JLINK_GetResetTypeDesc
+T46FC 000:689.079   - 0.797ms
+T46FC 000:689.605   Reset type: CONNECT UNDER RESET (https://kb.segger.com/J-Link_Reset_Strategies)
+T46FC 000:690.016   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T46FC 000:691.142   CPU_ReadMem(4 bytes @ 0xE000ED44)
+T46FC 000:692.595   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T46FC 000:694.063   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T46FC 000:696.472   Reset: Reset device via AIRCR.SYSRESETREQ.
+T46FC 000:698.407   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T46FC 000:753.898   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T46FC 000:757.476   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T46FC 000:760.432   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T46FC 000:769.173   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T46FC 000:775.038   CPU_WriteMem(4 bytes @ 0xE0002000)
+T46FC 000:780.960   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T46FC 000:785.125   CPU_ReadMem(4 bytes @ 0xE0001000)
+T46FC 000:787.942   CPU_WriteMem(4 bytes @ 0xE0001000)
+T46FC 000:790.582   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T46FC 000:793.761 - 106.063ms
+T46FC 000:797.930 JLINK_IsHalted()
+T46FC 000:800.698 - 2.766ms returns TRUE
+T46FC 000:803.297 JLINK_IsHalted()
+T46FC 000:805.202 - 1.903ms returns TRUE
+T46FC 000:807.256 JLINK_MeasureCPUSpeed(RAMAddr = 0xFFFFFFFF)
+T46FC 000:808.591   CPU_ReadMem(16 bytes @ 0x20004000)
+T46FC 000:810.728   CPU_ReadMem(64 bytes @ 0x20004000)
+T46FC 000:814.271    -- Updating C cache (64 bytes @ 0x20004000)
+T46FC 000:815.614    -- Read from C cache (6 bytes @ 0x20004000)
+T46FC 000:816.926   CPU_ReadMem(4 bytes @ 0x40019004)
+T46FC 000:818.414   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T46FC 000:820.677   CPU_ReadMem(4 bytes @ 0xE000ED94)
+T46FC 000:822.163   CPU_WriteMem(16 bytes @ 0x20004000)
+T46FC 000:823.724   CPU_WriteMem(6 bytes @ 0x20004000)
+T46FC 000:825.540   CPU_ReadMem(64 bytes @ 0x20004000)
+T46FC 000:829.407    -- Updating C cache (64 bytes @ 0x20004000)
+T46FC 000:832.172    -- Read from C cache (6 bytes @ 0x20004000)
+T46FC 000:833.412   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T46FC 000:835.095   CPU_WriteMem(4 bytes @ 0xE0002008)
+T46FC 000:836.420   CPU_WriteMem(4 bytes @ 0xE000200C)
+T46FC 000:837.330   CPU_WriteMem(4 bytes @ 0xE0002010)
+T46FC 000:838.764   CPU_WriteMem(4 bytes @ 0xE0002014)
+T46FC 000:847.208   CPU_WriteMem(4 bytes @ 0xE0002008)
+T46FC 000:848.629   CPU_WriteMem(4 bytes @ 0xE000200C)
+T46FC 000:850.194   CPU_WriteMem(4 bytes @ 0xE0002010)
+T46FC 000:851.303   CPU_WriteMem(4 bytes @ 0xE0002014)
+T46FC 000:852.880   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T46FC 000:853.988   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T46FC 000:855.008   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T46FC 000:882.880   CPU_WriteMem(6 bytes @ 0x20004000)
+T46FC 000:886.474   ClockFreq: 499200 Hz
+T46FC 000:888.884 - 81.626ms returns 499200
+T46FC 000:890.088 JLINK_ReadReg(XPSR)
+T46FC 000:891.289   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T46FC 000:893.165 - 3.076ms returns 0x61000000
+T8200 003:059.738 JLINK_WriteMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 003:062.154   Data:  00 00 00 00
+T8200 003:065.191   CPU_WriteMem(4 bytes @ 0x20004AF0)
+T8200 003:067.955 - 8.217ms returns 0x4
+T8200 003:069.053 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 003:069.682   CPU_ReadMem(64 bytes @ 0x20004AC0)
+T8200 003:071.143    -- Updating C cache (64 bytes @ 0x20004AC0)
+T8200 003:073.025    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 003:076.562   Data:  00 00 00 00
+T8200 003:080.027 - 10.972ms returns 0
+T8200 003:083.390 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 003:084.654   CPU_ReadMem(64 bytes @ 0x20004A40)
+T8200 003:088.286    -- Updating C cache (64 bytes @ 0x20004A40)
+T8200 003:091.446    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 003:094.720   Data:  D4 44 00 20
+T8200 003:098.910 - 15.518ms returns 0
+T8200 003:100.429 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 003:102.104   CPU_ReadMem(64 bytes @ 0x00002980)
+T8200 003:105.353    -- Updating C cache (64 bytes @ 0x00002980)
+T8200 003:107.134    -- Read from C cache (4 bytes @ 0x00002980)
+T8200 003:108.564   Data:  FF FF FF FF
+T8200 003:109.591 - 9.161ms returns 0
+T8200 003:729.433 JLINK_ResetPullsRESET(ON)
+T8200 003:730.866 - 1.431ms
+T8200 003:732.319 JLINK_Halt()
+T8200 003:733.728 - 1.408ms returns 0x00
+T8200 003:734.789 JLINK_IsHalted()
+T8200 003:735.643 - 0.853ms returns TRUE
+T8200 003:736.325 JLINK_Reset()
+T8200 003:737.100   CPU_ReadMem(4 bytes @ 0x20004000)
+T8200 003:739.041   CPU_WriteMem(4 bytes @ 0x20004000)
+T8200 003:740.663   JLINK_GetResetTypeDesc
+T8200 003:741.701   - 1.036ms
+T8200 003:742.716   Reset type: CONNECT UNDER RESET (https://kb.segger.com/J-Link_Reset_Strategies)
+T8200 003:744.111   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T8200 003:746.342   CPU_ReadMem(4 bytes @ 0xE000ED44)
+T8200 003:748.461   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T8200 003:750.370   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T8200 003:752.523   Reset: Reset device via AIRCR.SYSRESETREQ.
+T8200 003:754.315   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T8200 003:809.953   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8200 003:812.753   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8200 003:815.157   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T8200 003:823.936   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8200 003:829.259   CPU_WriteMem(4 bytes @ 0xE0002000)
+T8200 003:832.222   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T8200 003:834.836   CPU_ReadMem(4 bytes @ 0xE0001000)
+T8200 003:837.296   CPU_WriteMem(4 bytes @ 0xE0001000)
+T8200 003:839.790   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T8200 003:841.639 - 105.313ms
+T8200 003:842.653 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
+T8200 003:843.734 - 1.079ms returns 0
+T8200 003:846.498 JLINK_BeginDownload(Flags = 0x00000000)
+T8200 003:848.039 - 1.541ms
+T8200 003:890.596 JLINK_WriteMem(0x00000000, 0x40 Bytes, ...)
+T8200 003:892.230   Data:  18 44 00 20 99 00 00 00 29 0D 00 00 75 0D 00 00 ...
+T8200 003:894.872   completely In flash
+T8200 003:895.977 - 5.380ms returns 0x40
+T8200 003:898.887 JLINK_WriteMem(0x00000040, 0x154 Bytes, ...)
+T8200 003:900.966   Data:  02 00 00 00 50 00 00 00 03 00 00 00 68 00 00 00 ...
+T8200 003:902.133   completely In flash
+T8200 003:902.839 - 3.953ms returns 0x154
+T8200 003:904.268 JLINK_WriteMem(0x00000400, 0x4 Bytes, ...)
+T8200 003:905.236   Data:  FF FF FF FF
+T8200 003:906.648   completely In flash
+T8200 003:907.665 - 3.396ms returns 0x4
+T8200 003:909.413 JLINK_WriteMem(0x00000404, 0x4 Bytes, ...)
+T8200 003:910.945   Data:  DF CF FF FF
+T8200 003:914.020   completely In flash
+T8200 003:915.283 - 5.864ms returns 0x4
+T8200 003:916.862 JLINK_WriteMem(0x00000440, 0x14 Bytes, ...)
+T8200 003:917.965   Data:  00 02 00 03 05 00 00 00 05 00 00 00 60 21 00 00 ...
+T8200 003:920.086   completely In flash
+T8200 003:922.046 - 5.182ms returns 0x14
+T8200 003:923.930 JLINK_WriteMem(0x00000454, 0xBCC Bytes, ...)
+T8200 003:925.150   Data:  02 46 01 20 E2 B1 13 68 0B B1 0E 20 70 47 B9 B1 ...
+T8200 003:926.000   completely In flash
+T8200 003:927.822 - 3.892ms returns 0xBCC
+T8200 003:929.860 JLINK_WriteMem(0x00001020, 0xBD0 Bytes, ...)
+T8200 003:931.048   Data:  00 F0 81 F8 00 F0 EC FB 35 46 37 46 04 9E AF E7 ...
+T8200 003:932.043   completely In flash
+T8200 003:932.741 - 2.880ms returns 0xBD0
+T8200 003:933.939 JLINK_WriteMem(0x00001BF0, 0xBD0 Bytes, ...)
+T8200 003:934.566   Data:  FF F7 60 F8 7C 4A 00 20 CC 25 00 00 BE 14 00 00 ...
+T8200 003:935.741   completely In flash
+T8200 003:936.300 - 2.361ms returns 0xBD0
+T8200 003:937.360 JLINK_WriteMem(0x000027C0, 0x212 Bytes, ...)
+T8200 003:937.960   Data:  61 73 65 54 79 70 65 5F 74 20 29 20 30 55 20 29 ...
+T8200 003:938.494   completely In flash
+T8200 003:939.511 - 2.149ms returns 0x212
+T8200 003:965.028 JLINK_EndDownload()
+T8200 003:968.344   HandleBeforeFlashProg() start
+T8200 003:970.076    J-Link Script File: Executing HandleBeforeFlashProg()
+T8200 003:970.776   CPU_ReadMem(2 bytes @ 0x40000D04)
+T8200 003:971.616   CPU_ReadMem(2 bytes @ 0x40000D14)
+T8200 003:972.582   HandleBeforeFlashProg() end - Took 2.50ms
+T8200 003:973.758   CPU_ReadMem(4 bytes @ 0x40019004)
+T8200 003:974.717   CPU_ReadMem(4 bytes @ 0xE000ED90)
+T8200 003:975.556   CPU_ReadMem(4 bytes @ 0xE000ED94)
+T8200 003:977.589    -- --------------------------------------
+T8200 003:979.281    -- Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T8200 003:980.357    -- Start of determining dirty areas in flash cache
+T8200 003:981.236    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000000 if necessary
+T8200 003:982.089    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000800 if necessary
+T8200 003:982.921    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001000 if necessary
+T8200 003:984.217    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001800 if necessary
+T8200 003:985.772    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002000 if necessary
+T8200 003:986.933    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002800 if necessary
+T8200 003:988.298    -- End of determining dirty areas
+T8200 003:989.151    -- Start of preparing flash programming
+T8200 003:989.948    -- Calculating RAM usage
+T8200 003:997.515    -- RAM usage = 3284 Bytes
+T8200 004:000.608    -- Preserving CPU registers
+T8200 004:002.917    -- Determining CPU clock frequency
+T8200 004:040.209    -- Preparing target
+T8200 004:047.930    -- Preserving target RAM temporarily used for programming
+T8200 004:067.609    -- Downloading RAMCode
+T8200 004:090.699    -- Preparing RAMCode
+T8200 004:104.694    -- CPU frequency = 8000 kHz
+T8200 004:109.270    -- End of preparing flash programming
+T8200 004:183.464
+  ***** Warning:
+T8200 004:187.189   CPU is running at low speed (8000 kHz).
+T8200 004:189.776    -- CPU is running at 8000 kHz.
+T8200 004:193.078    -- Start of comparing flash
+T8200 004:198.407    -- CRC check was estimated as fastest method
+T8200 004:364.650    -- Comparing range 0x0000 - 0x2FFF (6 Sectors, 12 KB), using multi-block CRC calculation
+T8200 004:380.507    -- CRC does not match for sectors 0-5
+T8200 004:381.582    -- End of comparing flash
+T8200 004:382.305    -- Start of erasing sectors
+T8200 004:383.083    -- Erasing range 0x00000000 - 0x00002FFF (  6 Sectors, 12 KB)
+T8200 004:424.890    -- End of erasing sectors
+T8200 004:427.427    -- Start of flash programming
+T8200 004:429.360    -- Programming range 0x00000000 - 0x00002FFF (  6 Sectors, 12 KB)
+T8200 004:607.825    -- End of flash programming
+T8200 004:610.812    -- 0x0000 - 0x2FFF (  6 Sectors, 12 KB)
+T8200 004:613.402    -- Start of restoring
+T8200 004:616.103    -- Restoring RAMCode
+T8200 004:644.779    -- Restoring target memory
+T8200 004:661.745    -- Restore target
+T8200 004:666.963    -- Restoring CPU registers
+T8200 004:670.808    -- End of restoring
+T8200 004:672.762    -- Bank 1 @ 0x00000000: 1 range affected (12288 bytes)
+T8200 004:674.188    -- Total: 0.683s (Prepare: 0.203s, Compare: 0.189s, Erase: 0.045s, Program & Verify: 0.209s, Restore: 0.035s)
+T8200 004:675.455    -- Program & Verify speed: 57 KB/s
+T8200 004:700.069   HandleAfterFlashProg() start
+T8200 004:702.168    J-Link Script File: Executing HandleAfterFlashProg()
+T8200 004:702.819   HandleAfterFlashProg() end - Took 650us
+T8200 004:704.226 - 739.197ms returns 12288 (0x3000)
+T8200 004:706.370 JLINK_WriteReg(R15 (PC), 0x00000098)
+T8200 004:707.676 - 1.306ms returns 0
+T8200 004:709.125 JLINK_WriteReg(XPSR, 0x01000000)
+T8200 004:711.021 - 1.896ms returns 0
+T8200 004:713.490 JLINK_WriteMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 004:715.595   Data:  00 00 00 00
+T8200 004:717.260   CPU_WriteMem(4 bytes @ 0x20004AF0)
+T8200 004:718.775 - 5.286ms returns 0x4
+T8200 004:719.781 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 004:720.650   CPU_ReadMem(64 bytes @ 0x20004AC0)
+T8200 004:722.951    -- Updating C cache (64 bytes @ 0x20004AC0)
+T8200 004:724.698    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 004:725.989   Data:  00 00 00 00
+T8200 004:727.634 - 7.853ms returns 0
+T8200 004:728.804 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 004:729.848   CPU_ReadMem(64 bytes @ 0x20004A40)
+T8200 004:731.751    -- Updating C cache (64 bytes @ 0x20004A40)
+T8200 004:733.357    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 004:736.611   Data:  D4 44 00 20
+T8200 004:740.257 - 11.450ms returns 0
+T8200 004:742.414 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 004:744.038    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 004:747.231   Data:  04 00 00 00
+T8200 004:750.472 - 8.056ms returns 0
+T8200 004:755.257 JLINK_ResetPullsRESET(ON)
+T8200 004:757.518 - 2.260ms
+T8200 004:759.056 JLINK_Halt()
+T8200 004:761.327 - 2.269ms returns 0x00
+T8200 004:762.751 JLINK_IsHalted()
+T8200 004:763.849 - 1.096ms returns TRUE
+T8200 004:765.025 JLINK_Reset()
+T8200 004:765.699   CPU_ReadMem(4 bytes @ 0x20004000)
+T8200 004:767.003   CPU_WriteMem(4 bytes @ 0x20004000)
+T8200 004:768.763   JLINK_GetResetTypeDesc
+T8200 004:769.925   - 1.161ms
+T8200 004:770.764   Reset type: CONNECT UNDER RESET (https://kb.segger.com/J-Link_Reset_Strategies)
+T8200 004:771.905   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T8200 004:773.753   CPU_ReadMem(4 bytes @ 0xE000ED44)
+T8200 004:775.813   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T8200 004:778.353   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T8200 004:781.452   Reset: Reset device via AIRCR.SYSRESETREQ.
+T8200 004:783.541   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T8200 004:838.503   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8200 004:842.147   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8200 004:845.867   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T8200 004:856.926   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T8200 004:864.021   CPU_WriteMem(4 bytes @ 0xE0002000)
+T8200 004:867.894   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T8200 004:872.291   CPU_ReadMem(4 bytes @ 0xE0001000)
+T8200 004:874.354   CPU_WriteMem(4 bytes @ 0xE0001000)
+T8200 004:875.907   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T8200 004:879.253 - 114.226ms
+T8200 004:880.498 JLINK_SetEndian(ARM_ENDIAN_LITTLE)
+T8200 004:881.468 - 0.969ms returns 0
+T8200 004:883.153 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 004:884.363   CPU_ReadMem(64 bytes @ 0x20004AC0)
+T8200 004:886.010    -- Updating C cache (64 bytes @ 0x20004AC0)
+T8200 004:887.070    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 004:888.950   Data:  00 00 00 00
+T8200 004:890.157 - 7.002ms returns 0
+T8200 004:890.821 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 004:891.532   CPU_ReadMem(64 bytes @ 0x20004A40)
+T8200 004:894.098    -- Updating C cache (64 bytes @ 0x20004A40)
+T8200 004:896.501    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 004:897.630   Data:  D4 44 00 20
+T8200 004:899.049 - 8.225ms returns 0
+T8200 004:900.392 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 004:901.035    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 004:901.873   Data:  04 00 00 00
+T8200 004:902.865 - 2.473ms returns 0
+T8200 004:937.106 JLINK_WriteMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 004:938.508   Data:  00 00 00 00
+T8200 004:940.033   CPU_WriteMem(4 bytes @ 0x20004AF0)
+T8200 004:942.901 - 5.794ms returns 0x4
+T8200 004:945.061 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 004:946.647   CPU_ReadMem(64 bytes @ 0x20004AC0)
+T8200 004:949.001    -- Updating C cache (64 bytes @ 0x20004AC0)
+T8200 004:950.763    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 004:952.449   Data:  00 00 00 00
+T8200 004:954.106 - 9.045ms returns 0
+T8200 004:954.836 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 004:955.591    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 004:957.683   Data:  D4 44 00 20
+T8200 004:960.697 - 5.859ms returns 0
+T8200 004:962.990 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 004:964.510    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 004:965.497   Data:  04 00 00 00
+T8200 004:966.313 - 3.324ms returns 0
+T8200 004:970.464 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 004:972.269    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 004:974.122   Data:  00 00 00 00
+T8200 004:975.808 - 5.344ms returns 0
+T8200 004:976.902 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 004:977.805    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 004:979.065   Data:  D4 44 00 20
+T8200 004:979.986 - 3.084ms returns 0
+T8200 004:980.481 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 004:980.855    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 004:981.513   Data:  04 00 00 00
+T8200 004:982.063 - 1.581ms returns 0
+T8200 004:982.919 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 004:983.670    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 004:984.381   Data:  00 00 00 00
+T8200 004:984.889 - 1.971ms returns 0
+T8200 004:985.243 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 004:985.784    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 004:986.276   Data:  D4 44 00 20
+T8200 004:986.990 - 1.746ms returns 0
+T8200 004:987.421 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 004:987.916    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 004:988.411   Data:  04 00 00 00
+T8200 004:989.056 - 1.635ms returns 0
+T8200 004:990.737 JLINK_ReadMem(0x00000098, 0x4 Bytes, ...)
+T8200 004:991.693    -- Read from flash cache (4 bytes @ 0x00000098)
+T8200 004:993.571   Data:  00 F0 04 F8
+T8200 004:995.852 - 5.114ms returns 0
+T8200 005:061.195 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 005:064.299    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 005:067.511   Data:  00 00 00 00
+T8200 005:069.332 - 8.138ms returns 0
+T8200 005:070.601 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 005:071.943    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 005:073.577   Data:  D4 44 00 20
+T8200 005:075.348 - 4.746ms returns 0
+T8200 005:076.752 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 005:077.891    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 005:079.927   Data:  04 00 00 00
+T8200 005:081.300 - 4.547ms returns 0
+T8200 005:082.963 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 005:083.861    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 005:085.117   Data:  00 00 00 00
+T8200 005:086.336 - 3.372ms returns 0
+T8200 005:087.095 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 005:087.860    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 005:089.326   Data:  D4 44 00 20
+T8200 005:090.551 - 3.456ms returns 0
+T8200 005:091.605 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 005:092.537    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 005:094.160   Data:  04 00 00 00
+T8200 005:095.214 - 3.609ms returns 0
+T8200 005:097.373 JLINK_ReadMem(0x00000098, 0x4 Bytes, ...)
+T8200 005:098.443    -- Read from flash cache (4 bytes @ 0x00000098)
+T8200 005:099.913   Data:  00 F0 04 F8
+T8200 005:101.128 - 3.753ms returns 0
+T8200 009:887.166 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 009:888.703    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 009:889.386   Data:  00 00 00 00
+T8200 009:890.120 - 2.954ms returns 0
+T8200 009:890.882 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 009:891.798    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 009:892.801   Data:  D4 44 00 20
+T8200 009:894.042 - 3.159ms returns 0
+T8200 009:894.594 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 009:895.038    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 009:895.658   Data:  04 00 00 00
+T8200 009:896.268 - 1.673ms returns 0
+T8200 009:896.644 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 009:896.960    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 009:897.401   Data:  00 00 00 00
+T8200 009:897.953 - 1.309ms returns 0
+T8200 009:899.415 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 009:900.114    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 009:900.732   Data:  D4 44 00 20
+T8200 009:901.194 - 1.778ms returns 0
+T8200 009:901.498 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 009:901.803    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 009:902.337   Data:  04 00 00 00
+T8200 009:903.130 - 1.632ms returns 0
+T8200 009:933.873 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T8200 009:935.742 - 1.867ms returns 0x04
+T8200 009:937.342 JLINK_GetNumWPUnits()
+T8200 009:938.854 - 1.511ms returns 2
+T8200 009:939.993 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T8200 009:941.416 - 1.422ms returns 0x04
+T8200 009:942.750 JLINK_GetNumWPUnits()
+T8200 009:943.875 - 1.124ms returns 2
+T8200 009:944.978 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T8200 009:945.978 - 1.000ms returns 0x04
+T8200 009:946.771 JLINK_GetNumWPUnits()
+T8200 009:947.722 - 0.950ms returns 2
+T8200 009:949.181 JLINK_SetBPEx(Addr = 0x00000690, Type = 0xFFFFFF00)
+T8200 009:950.225 - 1.044ms returns 0x00000001
+T8200 009:951.182 JLINK_ClrBPEx(BPHandle = 0x00000001)
+T8200 009:952.698 - 1.515ms returns 0x00
+T8200 009:991.084 JLINK_ReadMem(0x00000692, 0x2 Bytes, ...)
+T8200 009:992.615    -- Read from flash cache (2 bytes @ 0x00000692)
+T8200 009:994.667   Data:  0B 4C
+T8200 009:996.453 - 5.369ms returns 0
+T8200 009:998.944 JLINK_SetBPEx(Addr = 0x00000692, Type = 0xFFFFFF00)
+T8200 010:000.343 - 1.399ms returns 0x00000002
+T8200 010:121.052 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 010:122.579    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 010:124.817   Data:  00 00 00 00
+T8200 010:127.135 - 6.081ms returns 0
+T8200 010:128.720 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 010:130.321    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 010:132.314   Data:  D4 44 00 20
+T8200 010:134.054 - 5.334ms returns 0
+T8200 010:135.955 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 010:137.262    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 010:138.995   Data:  04 00 00 00
+T8200 010:141.239 - 5.283ms returns 0
+T8200 010:144.601 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 010:146.002    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 010:147.964   Data:  00 00 00 00
+T8200 010:149.807 - 5.205ms returns 0
+T8200 010:151.086 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 010:152.374    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 010:154.114   Data:  D4 44 00 20
+T8200 010:155.969 - 4.881ms returns 0
+T8200 010:157.162 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 010:158.293    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 010:160.145   Data:  04 00 00 00
+T8200 010:161.861 - 4.697ms returns 0
+T8200 010:162.913 JLINK_ReadRegs(NumRegs = 22)
+T8200 010:164.136   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T8200 010:166.362
+  R0 (0)        = 0x3FFF               R1 (1)        = 0x40044400           R2 (2)        = 0x00                 R3 (3)        = 0x2800
+  R4 (4)        = 0x200047D4           R5 (5)        = 0x2000482C           R6 (6)        = 0x2000482C           R7 (7)        = 0x00
+  R8 (8)        = 0x00                 R9 (9)        = 0x00                 R10 (10)      = 0x00                 R11 (11)      = 0x00
+  R12 (12)      = 0x20004758           R13 (SP) (13) = 0x20004418           R14 (14)      = 0x2000432F           R15 (PC) (15) = 0x98
+  XPSR (16)     = 0x61000000           MSPLIM (86)   = 0x00                 PSPLIM (87)   = 0x00                 CFBP (20)     = 0x00
+  R0 (0)        = 0x3FFF               R1 (1)        = 0x40044400
+T8200 010:168.037 - 5.122ms returns 0x00
+T8200 010:171.321 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 010:172.788    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 010:174.710   Data:  00 00 00 00
+T8200 010:177.018 - 5.696ms returns 0
+T8200 010:178.195 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 010:179.255    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 010:181.096   Data:  D4 44 00 20
+T8200 010:182.682 - 4.486ms returns 0
+T8200 010:183.878 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 010:184.934    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 010:186.699   Data:  04 00 00 00
+T8200 010:188.403 - 4.524ms returns 0
+T8200 010:189.419 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 010:190.462    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 010:192.618   Data:  00 00 00 00
+T8200 010:194.243 - 4.822ms returns 0
+T8200 010:195.230 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 010:196.266    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 010:197.656   Data:  D4 44 00 20
+T8200 010:198.290 - 3.060ms returns 0
+T8200 010:199.430 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 010:200.196    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 010:201.379   Data:  04 00 00 00
+T8200 010:202.441 - 3.009ms returns 0
+T8200 010:204.483 JLINK_ReadMem(0x00000098, 0x4 Bytes, ...)
+T8200 010:205.561    -- Read from flash cache (4 bytes @ 0x00000098)
+T8200 010:206.970   Data:  00 F0 04 F8
+T8200 010:208.593 - 4.108ms returns 0
+T3510 010:328.362 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:329.798 - 1.436ms returns 0x04
+T3510 010:332.278 JLINK_GetNumWPUnits()
+T3510 010:333.577 - 1.296ms returns 2
+T3510 010:335.858 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:337.343 - 1.483ms returns 0x04
+T3510 010:338.530 JLINK_GetNumWPUnits()
+T3510 010:339.798 - 1.267ms returns 2
+T3510 010:342.436 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:344.506 - 2.072ms returns 0x04
+T3510 010:346.093 JLINK_GetNumWPUnits()
+T3510 010:347.823 - 1.728ms returns 2
+T3510 010:349.946 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:351.030 - 1.082ms returns 0x04
+T3510 010:352.547 JLINK_GetNumWPUnits()
+T3510 010:353.742 - 1.192ms returns 2
+T3510 010:355.900 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:357.381 - 1.479ms returns 0x04
+T3510 010:358.733 JLINK_GetNumWPUnits()
+T3510 010:360.298 - 1.562ms returns 2
+T3510 010:363.885 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:365.264 - 1.379ms returns 0x04
+T3510 010:366.579 JLINK_GetNumWPUnits()
+T3510 010:367.876 - 1.294ms returns 2
+T3510 010:370.571 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:371.635 - 1.062ms returns 0x04
+T3510 010:372.591 JLINK_GetNumWPUnits()
+T3510 010:373.837 - 1.244ms returns 2
+T3510 010:375.882 JLINK_GetNumBPUnits(Type = 0xFFFFFF00)
+T3510 010:377.112 - 1.228ms returns 0x04
+T3510 010:378.366 JLINK_GetNumWPUnits()
+T3510 010:379.250 - 0.883ms returns 2
+T8200 012:343.024 JLINK_ReadMem(0x00000098, 0x4 Bytes, ...)
+T8200 012:345.074    -- Read from flash cache (4 bytes @ 0x00000098)
+T8200 012:347.025   Data:  00 F0 04 F8
+T8200 012:348.574 - 5.551ms returns 0
+T8200 012:823.433 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 012:824.828    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 012:826.558   Data:  00 00 00 00
+T8200 012:828.441 - 5.008ms returns 0
+T8200 012:829.443 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 012:830.406    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 012:832.261   Data:  D4 44 00 20
+T8200 012:833.843 - 4.400ms returns 0
+T8200 012:834.788 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 012:835.770    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 012:837.298   Data:  04 00 00 00
+T8200 012:839.144 - 4.354ms returns 0
+T8200 012:840.414 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 012:841.656    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 012:843.393   Data:  00 00 00 00
+T8200 012:845.266 - 4.851ms returns 0
+T8200 012:848.177 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 012:849.490    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 012:851.259   Data:  D4 44 00 20
+T8200 012:853.120 - 4.942ms returns 0
+T8200 012:854.222 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 012:855.280    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 012:857.099   Data:  04 00 00 00
+T8200 012:858.837 - 4.613ms returns 0
+T8200 012:861.999 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 012:863.401    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 012:865.181   Data:  00 00 00 00
+T8200 012:866.907 - 4.906ms returns 0
+T8200 012:868.247 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 012:869.471    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 012:871.159   Data:  D4 44 00 20
+T8200 012:872.781 - 4.533ms returns 0
+T8200 012:875.749 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 012:877.230    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 012:879.037   Data:  04 00 00 00
+T8200 012:880.826 - 5.077ms returns 0
+T8200 012:881.907 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 012:882.962    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 012:884.518   Data:  00 00 00 00
+T8200 012:886.112 - 4.204ms returns 0
+T8200 012:887.321 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 012:888.246    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 012:889.745   Data:  D4 44 00 20
+T8200 012:891.606 - 4.285ms returns 0
+T8200 012:892.779 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 012:893.936    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 012:895.560   Data:  04 00 00 00
+T8200 012:897.192 - 4.412ms returns 0
+T8200 019:598.702 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 019:600.964    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 019:604.598   Data:  00 00 00 00
+T8200 019:608.650 - 9.944ms returns 0
+T8200 019:610.906 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 019:613.960    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 019:617.492   Data:  D4 44 00 20
+T8200 019:620.556 - 9.649ms returns 0
+T8200 019:624.652 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 019:626.236    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 019:627.272   Data:  04 00 00 00
+T8200 019:628.830 - 4.179ms returns 0
+T8200 019:630.378 JLINK_IsHalted()
+T8200 019:632.896 - 2.519ms returns TRUE
+T8200 019:634.120 JLINK_GoEx(MaxEmulInsts = 0, Flags = 0x01)
+T8200 019:634.848   CPU_WriteMem(4 bytes @ 0xE0002000)
+T8200 019:637.472   CPU_ReadMem(4 bytes @ 0xE0001000)
+T8200 019:639.974   CPU_WriteMem(4 bytes @ 0xE0001000)
+T8200 019:641.614   CPU_WriteMem(4 bytes @ 0xE0002008)
+T8200 019:642.980   CPU_WriteMem(4 bytes @ 0xE000200C)
+T8200 019:644.468   CPU_WriteMem(4 bytes @ 0xE0002010)
+T8200 019:646.634   CPU_WriteMem(4 bytes @ 0xE0002014)
+T8200 019:649.252   CPU_WriteMem(4 bytes @ 0xE0001004)
+T8200 019:653.248   Memory map 'after startup completion point' is active
+T8200 019:656.570 - 22.445ms
+T8200 019:754.014 JLINK_IsHalted()
+T8200 019:758.794 - 4.779ms returns TRUE
+T8200 019:760.914 JLINK_ReadReg(XPSR)
+T8200 019:762.538   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T8200 019:764.818 - 3.903ms returns 0x61000000
+T8200 019:766.018 JLINK_ReadReg(R15 (PC))
+T8200 019:767.102 - 1.084ms returns 0x00000692
+T8200 019:769.204 JLINK_ReadReg(XPSR)
+T8200 019:771.582 - 2.375ms returns 0x61000000
+T8200 019:772.756 JLINK_ReadReg(XPSR)
+T8200 019:773.868 - 1.111ms returns 0x61000000
+T8200 019:774.944 JLINK_ReadReg(R15 (PC))
+T8200 019:775.946 - 1.002ms returns 0x00000692
+T8200 019:777.130 JLINK_ReadReg(XPSR)
+T8200 019:778.846 - 1.716ms returns 0x61000000
+T8200 019:780.124 JLINK_ReadReg(XPSR)
+T8200 019:781.060 - 0.938ms returns 0x61000000
+T8200 019:781.980 JLINK_ReadMem(0x00000692, 0x1 Bytes, ...)
+T8200 019:782.874    -- Read from flash cache (1 bytes @ 0x00000692)
+T8200 019:784.332   Data:  0B
+T8200 019:786.658 - 4.674ms returns 0
+T8200 019:788.248 JLINK_IsHalted()
+T8200 019:789.366 - 1.117ms returns TRUE
+T8200 019:790.354 JLINK_ReadReg(XPSR)
+T8200 019:791.456 - 1.072ms returns 0x61000000
+T8200 019:792.846 JLINK_ReadReg(XPSR)
+T8200 019:793.910 - 1.062ms returns 0x61000000
+T8200 019:794.836 JLINK_ReadReg(R15 (PC))
+T8200 019:795.640 - 0.805ms returns 0x00000692
+T8200 019:797.252 JLINK_ReadReg(XPSR)
+T8200 019:798.146 - 0.892ms returns 0x61000000
+T8200 019:799.508 JLINK_ReadReg(XPSR)
+T8200 019:800.542 - 1.031ms returns 0x61000000
+T8200 019:801.356 JLINK_ReadMem(0x00000692, 0x1 Bytes, ...)
+T8200 019:802.336    -- Read from flash cache (1 bytes @ 0x00000692)
+T8200 019:804.002   Data:  0B
+T8200 019:805.360 - 4.003ms returns 0
+T8200 019:806.434 JLINK_IsHalted()
+T8200 019:807.480 - 1.046ms returns TRUE
+T8200 019:808.410 JLINK_ReadReg(XPSR)
+T8200 019:809.236 - 0.826ms returns 0x61000000
+T8200 019:810.036 JLINK_ReadReg(R15 (PC))
+T8200 019:810.786 - 0.748ms returns 0x00000692
+T8200 019:811.704 JLINK_ReadReg(XPSR)
+T8200 019:812.596 - 0.892ms returns 0x61000000
+T8200 019:813.890 JLINK_ReadReg(XPSR)
+T8200 019:815.052 - 1.159ms returns 0x61000000
+T8200 019:815.894 JLINK_ReadReg(R15 (PC))
+T8200 019:816.702 - 0.807ms returns 0x00000692
+T8200 019:817.448 JLINK_ReadReg(XPSR)
+T8200 019:818.506 - 1.056ms returns 0x61000000
+T8200 019:819.554 JLINK_ReadReg(XPSR)
+T8200 019:820.978 - 1.422ms returns 0x61000000
+T8200 019:822.036 JLINK_ReadMem(0x00000692, 0x1 Bytes, ...)
+T8200 019:822.888    -- Read from flash cache (1 bytes @ 0x00000692)
+T8200 019:824.400   Data:  0B
+T8200 019:825.516 - 3.480ms returns 0
+T8200 019:826.264 JLINK_IsHalted()
+T8200 019:826.958 - 0.694ms returns TRUE
+T8200 019:828.688 JLINK_ReadReg(XPSR)
+T8200 019:829.556 - 0.866ms returns 0x61000000
+T8200 019:830.344 JLINK_ReadReg(XPSR)
+T8200 019:831.076 - 0.730ms returns 0x61000000
+T8200 019:831.988 JLINK_ReadReg(R15 (PC))
+T8200 019:832.724 - 0.737ms returns 0x00000692
+T8200 019:833.564 JLINK_ReadReg(XPSR)
+T8200 019:834.952 - 1.386ms returns 0x61000000
+T8200 019:835.956 JLINK_ReadReg(XPSR)
+T8200 019:836.952 - 0.995ms returns 0x61000000
+T8200 019:838.248 JLINK_ReadMem(0x00000692, 0x1 Bytes, ...)
+T8200 019:839.148    -- Read from flash cache (1 bytes @ 0x00000692)
+T8200 019:840.592   Data:  0B
+T8200 019:842.188 - 3.939ms returns 0
+T8200 019:843.194 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 019:844.186   CPU_ReadMem(64 bytes @ 0x20004AC0)
+T8200 019:846.050    -- Updating C cache (64 bytes @ 0x20004AC0)
+T8200 019:847.302    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 019:849.170   Data:  00 00 00 00
+T8200 019:850.566 - 7.373ms returns 0
+T8200 019:851.292 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 019:852.116   CPU_ReadMem(64 bytes @ 0x20004A40)
+T8200 019:854.124    -- Updating C cache (64 bytes @ 0x20004A40)
+T8200 019:856.192    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 019:857.740   Data:  00 00 00 00
+T8200 019:858.892 - 7.598ms returns 0
+T8200 019:860.588 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 019:861.520    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 019:863.300   Data:  04 00 00 00
+T8200 019:864.554 - 3.963ms returns 0
+T8200 019:866.364 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 019:867.260    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 019:868.476   Data:  00 00 00 00
+T8200 019:870.676 - 4.309ms returns 0
+T8200 019:871.682 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 019:872.506    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 019:873.694   Data:  00 00 00 00
+T8200 019:874.794 - 3.111ms returns 0
+T8200 019:875.594 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 019:876.782    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 019:878.004   Data:  04 00 00 00
+T8200 019:879.122 - 3.528ms returns 0
+T8200 019:879.956 JLINK_ReadRegs(NumRegs = 22)
+T8200 019:880.836
+  R0 (0)        = 0x00                 R1 (1)        = 0x9D                 R2 (2)        = 0x80                 R3 (3)        = 0x40040800
+  R4 (4)        = 0x200047D4           R5 (5)        = 0x2000482C           R6 (6)        = 0x2000482C           R7 (7)        = 0x00
+  R8 (8)        = 0x00                 R9 (9)        = 0x00                 R10 (10)      = 0x00                 R11 (11)      = 0x00
+  R12 (12)      = 0x20004758           R13 (SP) (13) = 0x20004410           R14 (14)      = 0xA1                 R15 (PC) (15) = 0x692
+  XPSR (16)     = 0x61000000           MSPLIM (86)   = 0x00                 PSPLIM (87)   = 0x00                 CFBP (20)     = 0x00
+  R0 (0)        = 0x00                 R1 (1)        = 0x9D
+T8200 019:882.024 - 2.066ms returns 0x00
+T8200 019:884.430 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 019:885.690    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 019:887.536   Data:  00 00 00 00
+T8200 019:888.924 - 4.493ms returns 0
+T8200 019:889.884 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 019:890.948    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 019:892.476   Data:  00 00 00 00
+T8200 019:893.724 - 3.838ms returns 0
+T8200 019:894.516 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 019:895.464    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 019:897.066   Data:  04 00 00 00
+T8200 019:898.316 - 3.798ms returns 0
+T8200 019:900.190 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 019:901.074    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 019:902.252   Data:  00 00 00 00
+T8200 019:903.698 - 3.507ms returns 0
+T8200 019:905.020 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 019:906.202    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 019:907.894   Data:  00 00 00 00
+T8200 019:909.110 - 4.091ms returns 0
+T8200 019:909.874 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 019:910.668    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 019:912.350   Data:  04 00 00 00
+T8200 019:913.884 - 4.010ms returns 0
+T8200 019:915.792 JLINK_ReadMem(0x00000692, 0x4 Bytes, ...)
+T8200 019:916.890    -- Read from flash cache (4 bytes @ 0x00000692)
+T8200 019:918.356   Data:  0B 4C 00 20
+T8200 019:920.040 - 4.247ms returns 0
+T8200 019:951.824 JLINK_ClrBPEx(BPHandle = 0x00000002)
+T8200 019:953.576 - 1.750ms returns 0x00
+T3510 019:960.882 JLINK_IsHalted()
+T3510 019:962.644 - 1.760ms returns TRUE
+T3510 019:963.956 JLINK_ReadReg(XPSR)
+T3510 019:965.044 - 1.086ms returns 0x61000000
+T3510 019:965.892 JLINK_ReadReg(R15 (PC))
+T3510 019:966.750 - 0.857ms returns 0x00000692
+T3510 019:967.900 JLINK_ReadReg(XPSR)
+T3510 019:968.884 - 0.982ms returns 0x61000000
+T3510 019:969.936 JLINK_ReadReg(XPSR)
+T3510 019:970.972 - 1.036ms returns 0x61000000
+T3510 019:972.094 JLINK_ReadReg(R15 (PC))
+T3510 019:973.188 - 1.093ms returns 0x00000692
+T3510 019:974.396 JLINK_ReadReg(XPSR)
+T3510 019:975.824 - 1.427ms returns 0x61000000
+T3510 019:977.030 JLINK_ReadReg(XPSR)
+T3510 019:978.140 - 1.109ms returns 0x61000000
+T3510 019:979.480 JLINK_ReadMem(0x00000692, 0x1 Bytes, ...)
+T3510 019:980.716    -- Read from flash cache (1 bytes @ 0x00000692)
+T3510 019:982.844   Data:  0B
+T3510 019:984.536 - 5.057ms returns 0
+T3510 019:985.590 JLINK_IsHalted()
+T3510 019:986.768 - 1.176ms returns TRUE
+T3510 019:987.470 JLINK_ReadReg(XPSR)
+T3510 019:987.962 - 0.491ms returns 0x61000000
+T3510 019:988.292 JLINK_ReadReg(XPSR)
+T3510 019:988.902 - 0.611ms returns 0x61000000
+T3510 019:989.990 JLINK_ReadReg(R15 (PC))
+T3510 019:990.416 - 0.426ms returns 0x00000692
+T3510 019:990.982 JLINK_ReadReg(XPSR)
+T3510 019:991.696 - 0.712ms returns 0x61000000
+T3510 019:992.156 JLINK_ReadReg(XPSR)
+T3510 019:992.586 - 0.429ms returns 0x61000000
+T3510 019:992.994 JLINK_ReadMem(0x00000692, 0x1 Bytes, ...)
+T3510 019:993.378    -- Read from flash cache (1 bytes @ 0x00000692)
+T3510 019:994.068   Data:  0B
+T3510 019:994.704 - 1.710ms returns 0
+T3510 019:995.764 JLINK_ReadMem(0xE0001000, 0x4 Bytes, ...)
+T3510 019:996.908   CPU_ReadMem(4 bytes @ 0xE0001000)
+T3510 019:998.188   Data:  00 00 00 2B
+T3510 019:998.764   Debug reg: DWT_CTRL
+T3510 019:999.208 - 3.443ms returns 0
+T8200 019:999.620 JLINK_ReadMem(0x00000692, 0x4 Bytes, ...)
+T8200 020:000.812    -- Read from flash cache (4 bytes @ 0x00000692)
+T8200 020:002.076   Data:  0B 4C 00 20
+T8200 020:004.066 - 4.444ms returns 0
+T8200 020:052.116 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 020:053.932    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 020:055.634   Data:  00 00 00 00
+T8200 020:057.050 - 4.935ms returns 0
+T8200 020:057.806 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 020:058.510    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 020:060.388   Data:  00 00 00 00
+T8200 020:061.748 - 3.941ms returns 0
+T8200 020:062.476 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 020:063.252    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 020:064.364   Data:  04 00 00 00
+T8200 020:065.462 - 2.986ms returns 0
+T8200 020:066.260 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 020:067.476    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 020:069.134   Data:  00 00 00 00
+T8200 020:070.764 - 4.500ms returns 0
+T8200 020:071.902 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 020:073.108    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 020:074.848   Data:  00 00 00 00
+T8200 020:076.144 - 4.241ms returns 0
+T8200 020:077.534 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 020:078.118    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 020:079.260   Data:  04 00 00 00
+T8200 020:080.426 - 2.891ms returns 0
+T8200 020:082.878 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 020:083.748    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 020:084.980   Data:  00 00 00 00
+T8200 020:086.248 - 3.369ms returns 0
+T8200 020:086.990 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 020:088.392    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 020:089.536   Data:  00 00 00 00
+T8200 020:090.354 - 3.362ms returns 0
+T8200 020:091.110 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 020:091.684    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 020:092.584   Data:  04 00 00 00
+T8200 020:093.402 - 2.291ms returns 0
+T8200 020:093.878 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 020:094.394    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 020:095.828   Data:  00 00 00 00
+T8200 020:097.108 - 3.229ms returns 0
+T8200 020:097.768 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 020:098.368    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 020:099.530   Data:  00 00 00 00
+T8200 020:101.068 - 3.299ms returns 0
+T8200 020:101.988 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 020:103.268    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 020:105.276   Data:  04 00 00 00
+T8200 020:107.080 - 5.091ms returns 0
+T8200 021:020.782 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 021:023.984    -- Read from C cache (4 bytes @ 0x20004AF0)
+T8200 021:028.392   Data:  00 00 00 00
+T8200 021:032.644 - 11.859ms returns 0
+T8200 021:035.574 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 021:038.684    -- Read from C cache (4 bytes @ 0x20004A7C)
+T8200 021:043.042   Data:  00 00 00 00
+T8200 021:044.838 - 9.266ms returns 0
+T8200 021:046.518 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 021:049.036    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 021:053.428   Data:  04 00 00 00
+T8200 021:057.514 - 10.994ms returns 0
+T8200 021:059.284 JLINK_IsHalted()
+T8200 021:060.752 - 1.467ms returns TRUE
+T8200 021:064.150 JLINK_GoEx(MaxEmulInsts = 0, Flags = 0x01)
+T8200 021:065.160   CPU_ReadMem(4 bytes @ 0xE0001000)
+T8200 021:066.884   CPU_WriteMem(4 bytes @ 0xE0002008)
+T8200 021:071.316 - 7.165ms
+T8200 021:175.172 JLINK_IsHalted()
+T8200 021:179.300 - 4.128ms returns FALSE
+T8200 021:182.480 JLINK_IsHalted()
+T8200 021:184.810 - 2.329ms returns FALSE
+T8200 021:285.312 JLINK_IsHalted()
+T8200 021:289.132 - 3.819ms returns FALSE
+T8200 021:291.764 JLINK_IsHalted()
+T8200 021:295.044 - 3.280ms returns FALSE
+T8200 021:394.436 JLINK_IsHalted()
+T8200 021:396.668 - 2.230ms returns FALSE
+T8200 021:398.204 JLINK_IsHalted()
+T8200 021:400.820 - 2.612ms returns FALSE
+T8200 021:503.972 JLINK_IsHalted()
+T8200 021:506.810 - 2.835ms returns FALSE
+T8200 021:508.290 JLINK_IsHalted()
+T8200 021:509.292 - 1.003ms returns FALSE
+T8200 021:612.844 JLINK_IsHalted()
+T8200 021:614.652 - 1.809ms returns FALSE
+T8200 021:615.912 JLINK_IsHalted()
+T8200 021:617.164 - 1.251ms returns FALSE
+T8200 021:722.676 JLINK_IsHalted()
+T8200 021:724.276 - 1.602ms returns FALSE
+T8200 021:725.208 JLINK_IsHalted()
+T8200 021:726.776 - 1.566ms returns FALSE
+T8200 021:831.798 JLINK_IsHalted()
+T8200 021:834.354 - 2.554ms returns FALSE
+T8200 021:836.628 JLINK_IsHalted()
+T8200 021:838.658 - 2.030ms returns FALSE
+T8200 021:940.764 JLINK_IsHalted()
+T8200 021:944.034 - 3.268ms returns FALSE
+T8200 021:946.222 JLINK_IsHalted()
+T8200 021:950.776 - 4.553ms returns FALSE
+T3510 022:040.350 JLINK_IsHalted()
+T3510 022:043.666 - 3.315ms returns FALSE
+T3510 022:045.032 JLINK_IsHalted()
+T3510 022:046.464 - 1.430ms returns FALSE
+T8200 022:050.166 JLINK_IsHalted()
+T8200 022:052.756 - 2.590ms returns FALSE
+T8200 022:054.546 JLINK_IsHalted()
+T8200 022:056.884 - 2.337ms returns FALSE
+T8200 022:159.574 JLINK_IsHalted()
+T8200 022:163.240 - 3.662ms returns FALSE
+T8200 022:165.388 JLINK_IsHalted()
+T8200 022:167.536 - 2.146ms returns FALSE
+T8200 022:269.510 JLINK_IsHalted()
+T8200 022:272.784 - 3.272ms returns FALSE
+T8200 022:275.644 JLINK_IsHalted()
+T8200 022:277.916 - 2.271ms returns FALSE
+T8200 022:379.372 JLINK_IsHalted()
+T8200 022:384.014 - 4.643ms returns FALSE
+T8200 022:385.720 JLINK_IsHalted()
+T8200 022:388.132 - 2.410ms returns FALSE
+T8200 022:487.652 JLINK_IsHalted()
+T8200 022:490.192 - 2.538ms returns FALSE
+T8200 022:492.034 JLINK_IsHalted()
+T8200 022:494.056 - 2.020ms returns FALSE
+T8200 022:597.282 JLINK_IsHalted()
+T8200 022:602.400 - 5.116ms returns FALSE
+T8200 022:605.082 JLINK_IsHalted()
+T8200 022:609.486 - 4.403ms returns FALSE
+T8200 022:706.818 JLINK_IsHalted()
+T8200 022:710.084 - 3.261ms returns FALSE
+T8200 022:712.988 JLINK_IsHalted()
+T8200 022:715.206 - 2.218ms returns FALSE
+T8200 022:816.668 JLINK_IsHalted()
+T8200 022:823.740 - 7.071ms returns FALSE
+T8200 022:827.288 JLINK_IsHalted()
+T8200 022:829.632 - 2.342ms returns FALSE
+T8200 022:926.280 JLINK_IsHalted()
+T8200 022:930.870 - 4.588ms returns FALSE
+T8200 022:933.704 JLINK_IsHalted()
+T8200 022:936.286 - 2.582ms returns FALSE
+T8200 023:034.920 JLINK_IsHalted()
+T8200 023:040.278 - 5.357ms returns FALSE
+T8200 023:042.628 JLINK_IsHalted()
+T8200 023:045.672 - 3.044ms returns FALSE
+T3510 023:049.820 JLINK_IsHalted()
+T3510 023:052.370 - 2.548ms returns FALSE
+T3510 023:053.396 JLINK_IsHalted()
+T3510 023:054.812 - 1.415ms returns FALSE
+T8200 023:144.012 JLINK_IsHalted()
+T8200 023:146.514 - 2.500ms returns FALSE
+T8200 023:148.274 JLINK_IsHalted()
+T8200 023:151.150 - 2.875ms returns FALSE
+T8200 023:253.960 JLINK_IsHalted()
+T8200 023:256.746 - 2.785ms returns FALSE
+T8200 023:258.594 JLINK_IsHalted()
+T8200 023:260.660 - 2.064ms returns FALSE
+T8200 023:363.536 JLINK_IsHalted()
+T8200 023:370.294 - 6.756ms returns FALSE
+T8200 023:372.426 JLINK_IsHalted()
+T8200 023:375.538 - 3.111ms returns FALSE
+T8200 023:472.024 JLINK_IsHalted()
+T8200 023:476.312 - 4.287ms returns FALSE
+T8200 023:479.208 JLINK_IsHalted()
+T8200 023:483.110 - 3.901ms returns FALSE
+T8200 023:581.372 JLINK_IsHalted()
+T8200 023:584.652 - 3.280ms returns FALSE
+T8200 023:586.748 JLINK_IsHalted()
+T8200 023:589.330 - 2.578ms returns FALSE
+T8200 023:691.168 JLINK_IsHalted()
+T8200 023:693.644 - 2.473ms returns FALSE
+T8200 023:695.002 JLINK_IsHalted()
+T8200 023:696.642 - 1.640ms returns FALSE
+T8200 023:800.394 JLINK_IsHalted()
+T8200 023:803.668 - 3.274ms returns FALSE
+T8200 023:806.886 JLINK_IsHalted()
+T8200 023:809.310 - 2.423ms returns FALSE
+T8200 023:910.108 JLINK_IsHalted()
+T8200 023:913.950 - 3.841ms returns FALSE
+T8200 023:915.854 JLINK_IsHalted()
+T8200 023:918.272 - 2.417ms returns FALSE
+T8200 024:019.248 JLINK_IsHalted()
+T8200 024:022.650 - 3.401ms returns FALSE
+T8200 024:024.536 JLINK_IsHalted()
+T8200 024:026.638 - 2.102ms returns FALSE
+T3510 024:056.714 JLINK_IsHalted()
+T3510 024:060.016 - 3.301ms returns FALSE
+T3510 024:061.978 JLINK_IsHalted()
+T3510 024:063.900 - 1.921ms returns FALSE
+T8200 024:128.310 JLINK_IsHalted()
+T8200 024:131.202 - 2.890ms returns FALSE
+T8200 024:132.988 JLINK_IsHalted()
+T8200 024:134.460 - 1.473ms returns FALSE
+T8200 024:238.250 JLINK_IsHalted()
+T8200 024:241.334 - 3.084ms returns FALSE
+T8200 024:243.864 JLINK_IsHalted()
+T8200 024:245.770 - 1.903ms returns FALSE
+T8200 024:346.940 JLINK_IsHalted()
+T8200 024:349.374 - 2.433ms returns FALSE
+T8200 024:350.532 JLINK_IsHalted()
+T8200 024:352.892 - 2.359ms returns FALSE
+T8200 024:456.952 JLINK_IsHalted()
+T8200 024:458.454 - 1.502ms returns FALSE
+T8200 024:459.546 JLINK_IsHalted()
+T8200 024:460.572 - 1.026ms returns FALSE
+T8200 024:566.540 JLINK_IsHalted()
+T8200 024:568.688 - 2.147ms returns FALSE
+T8200 024:569.490 JLINK_IsHalted()
+T8200 024:570.618 - 1.126ms returns FALSE
+T8200 024:675.196 JLINK_IsHalted()
+T8200 024:679.132 - 3.935ms returns FALSE
+T8200 024:683.234 JLINK_IsHalted()
+T8200 024:685.022 - 1.787ms returns FALSE
+T8200 024:785.370 JLINK_IsHalted()
+T8200 024:786.642 - 1.262ms returns FALSE
+T8200 024:787.466 JLINK_IsHalted()
+T8200 024:788.484 - 1.018ms returns FALSE
+T8200 024:893.760 JLINK_IsHalted()
+T8200 024:895.096 - 1.335ms returns FALSE
+T8200 024:896.096 JLINK_IsHalted()
+T8200 024:897.070 - 0.974ms returns FALSE
+T8200 025:003.290 JLINK_IsHalted()
+T8200 025:005.204 - 1.911ms returns FALSE
+T8200 025:005.860 JLINK_IsHalted()
+T8200 025:006.876 - 1.017ms returns FALSE
+T3510 025:065.692 JLINK_IsHalted()
+T3510 025:066.910 - 1.219ms returns FALSE
+T3510 025:068.652 JLINK_IsHalted()
+T3510 025:069.882 - 1.229ms returns FALSE
+T8200 025:113.294 JLINK_IsHalted()
+T8200 025:114.452 - 1.158ms returns FALSE
+T8200 025:115.128 JLINK_IsHalted()
+T8200 025:116.294 - 1.165ms returns FALSE
+T8200 025:222.308 JLINK_IsHalted()
+T8200 025:224.210 - 1.902ms returns FALSE
+T8200 025:224.868 JLINK_IsHalted()
+T8200 025:225.752 - 0.883ms returns FALSE
+T8200 025:331.590 JLINK_IsHalted()
+T8200 025:332.986 - 1.394ms returns FALSE
+T8200 025:334.334 JLINK_IsHalted()
+T8200 025:337.062 - 2.728ms returns FALSE
+T8200 025:441.540 JLINK_IsHalted()
+T8200 025:442.732 - 1.192ms returns FALSE
+T8200 025:443.620 JLINK_IsHalted()
+T8200 025:444.624 - 1.003ms returns FALSE
+T8200 025:550.716 JLINK_IsHalted()
+T8200 025:552.214 - 1.496ms returns FALSE
+T8200 025:553.052 JLINK_IsHalted()
+T8200 025:554.538 - 1.485ms returns FALSE
+T8200 025:660.172 JLINK_IsHalted()
+T8200 025:661.532 - 1.360ms returns FALSE
+T8200 025:662.400 JLINK_IsHalted()
+T8200 025:663.520 - 1.118ms returns FALSE
+T8200 025:769.482 JLINK_IsHalted()
+T8200 025:772.086 - 2.604ms returns FALSE
+T8200 025:774.494 JLINK_IsHalted()
+T8200 025:776.796 - 2.299ms returns FALSE
+T8200 025:878.916 JLINK_IsHalted()
+T8200 025:884.534 - 5.616ms returns FALSE
+T8200 025:887.574 JLINK_IsHalted()
+T8200 025:890.976 - 3.400ms returns FALSE
+T8200 025:988.334 JLINK_IsHalted()
+T8200 025:990.834 - 2.498ms returns FALSE
+T8200 025:993.178 JLINK_IsHalted()
+T8200 025:994.600 - 1.422ms returns FALSE
+T3510 026:073.348 JLINK_IsHalted()
+T3510 026:077.564 - 4.213ms returns FALSE
+T3510 026:081.738 JLINK_IsHalted()
+T3510 026:087.204 - 5.465ms returns FALSE
+T8200 026:097.100 JLINK_IsHalted()
+T8200 026:101.554 - 4.450ms returns FALSE
+T8200 026:105.844 JLINK_IsHalted()
+T8200 026:109.672 - 3.826ms returns FALSE
+T8200 026:222.308 JLINK_IsHalted()
+T8200 026:223.628 - 1.319ms returns FALSE
+T8200 026:224.544 JLINK_IsHalted()
+T8200 026:225.500 - 0.955ms returns FALSE
+T8200 026:332.286 JLINK_IsHalted()
+T8200 026:334.132 - 1.843ms returns FALSE
+T8200 026:335.534 JLINK_IsHalted()
+T8200 026:337.244 - 1.711ms returns FALSE
+T8200 026:441.536 JLINK_IsHalted()
+T8200 026:447.852 - 6.313ms returns FALSE
+T8200 026:450.932 JLINK_IsHalted()
+T8200 026:454.192 - 3.257ms returns FALSE
+T8200 026:550.730 JLINK_IsHalted()
+T8200 026:553.780 - 3.046ms returns FALSE
+T8200 026:556.060 JLINK_IsHalted()
+T8200 026:558.508 - 2.449ms returns FALSE
+T8200 026:660.110 JLINK_IsHalted()
+T8200 026:664.668 - 4.555ms returns FALSE
+T8200 026:667.060 JLINK_IsHalted()
+T8200 026:669.502 - 2.443ms returns FALSE
+T8200 026:769.156 JLINK_IsHalted()
+T8200 026:774.734 - 5.579ms returns FALSE
+T8200 026:777.506 JLINK_IsHalted()
+T8200 026:779.888 - 2.381ms returns FALSE
+T8200 026:878.954 JLINK_IsHalted()
+T8200 026:881.692 - 2.740ms returns FALSE
+T8200 026:884.036 JLINK_IsHalted()
+T8200 026:886.160 - 2.125ms returns FALSE
+T8200 026:987.568 JLINK_IsHalted()
+T8200 026:989.820 - 2.249ms returns FALSE
+T8200 026:991.360 JLINK_IsHalted()
+T8200 026:993.558 - 2.199ms returns FALSE
+T3510 027:091.888 JLINK_IsHalted()
+T3510 027:095.456 - 3.568ms returns FALSE
+T3510 027:097.292 JLINK_IsHalted()
+T3510 027:099.056 - 1.760ms returns FALSE
+T8200 027:100.692 JLINK_IsHalted()
+T8200 027:103.100 - 2.402ms returns FALSE
+T8200 027:105.156 JLINK_IsHalted()
+T8200 027:106.982 - 1.828ms returns FALSE
+T8200 027:206.420 JLINK_IsHalted()
+T8200 027:210.388 - 3.964ms returns FALSE
+T8200 027:213.008 JLINK_IsHalted()
+T8200 027:215.856 - 2.846ms returns FALSE
+T8200 027:316.790 JLINK_IsHalted()
+T8200 027:319.300 - 2.506ms returns FALSE
+T8200 027:321.274 JLINK_IsHalted()
+T8200 027:324.150 - 2.875ms returns FALSE
+T8200 027:426.048 JLINK_IsHalted()
+T8200 027:429.948 - 3.899ms returns FALSE
+T8200 027:433.146 JLINK_IsHalted()
+T8200 027:437.126 - 3.979ms returns FALSE
+T8200 027:535.936 JLINK_IsHalted()
+T8200 027:541.088 - 5.151ms returns FALSE
+T8200 027:543.616 JLINK_IsHalted()
+T8200 027:546.428 - 2.813ms returns FALSE
+T8200 027:644.240 JLINK_IsHalted()
+T8200 027:648.694 - 4.455ms returns FALSE
+T8200 027:651.878 JLINK_IsHalted()
+T8200 027:654.848 - 2.967ms returns FALSE
+T8200 027:753.770 JLINK_IsHalted()
+T8200 027:756.780 - 3.009ms returns FALSE
+T8200 027:758.726 JLINK_IsHalted()
+T8200 027:761.692 - 2.963ms returns FALSE
+T8200 027:863.434 JLINK_IsHalted()
+T8200 027:869.814 - 6.379ms returns FALSE
+T8200 027:872.278 JLINK_IsHalted()
+T8200 027:874.828 - 2.551ms returns FALSE
+T8200 027:972.778 JLINK_IsHalted()
+T8200 027:977.258 - 4.477ms returns FALSE
+T8200 027:979.532 JLINK_IsHalted()
+T8200 027:981.484 - 1.950ms returns FALSE
+T8200 028:081.660 JLINK_IsHalted()
+T8200 028:086.438 - 4.777ms returns FALSE
+T8200 028:089.364 JLINK_IsHalted()
+T8200 028:093.056 - 3.692ms returns FALSE
+T3510 028:102.240 JLINK_IsHalted()
+T3510 028:105.680 - 3.438ms returns FALSE
+T3510 028:107.866 JLINK_IsHalted()
+T3510 028:109.924 - 2.057ms returns FALSE
+T8200 028:190.794 JLINK_IsHalted()
+T8200 028:192.796 - 2.000ms returns FALSE
+T8200 028:193.830 JLINK_IsHalted()
+T8200 028:195.200 - 1.370ms returns FALSE
+T8200 028:300.788 JLINK_IsHalted()
+T8200 028:305.382 - 4.594ms returns FALSE
+T8200 028:308.788 JLINK_IsHalted()
+T8200 028:313.018 - 4.230ms returns FALSE
+T8200 028:410.336 JLINK_IsHalted()
+T8200 028:414.640 - 4.303ms returns FALSE
+T8200 028:416.762 JLINK_IsHalted()
+T8200 028:420.042 - 3.277ms returns FALSE
+T8200 028:519.572 JLINK_IsHalted()
+T8200 028:522.356 - 2.783ms returns FALSE
+T8200 028:524.042 JLINK_IsHalted()
+T8200 028:526.070 - 2.027ms returns FALSE
+T8200 028:628.342 JLINK_IsHalted()
+T8200 028:633.408 - 5.064ms returns FALSE
+T8200 028:636.288 JLINK_IsHalted()
+T8200 028:639.332 - 3.042ms returns FALSE
+T8200 028:737.766 JLINK_IsHalted()
+T8200 028:740.918 - 3.152ms returns FALSE
+T8200 028:744.268 JLINK_IsHalted()
+T8200 028:746.196 - 1.928ms returns FALSE
+T8200 028:847.830 JLINK_IsHalted()
+T8200 028:851.084 - 3.253ms returns FALSE
+T8200 028:853.308 JLINK_IsHalted()
+T8200 028:856.708 - 3.396ms returns FALSE
+T8200 028:956.902 JLINK_IsHalted()
+T8200 028:959.868 - 2.964ms returns FALSE
+T8200 028:962.234 JLINK_IsHalted()
+T8200 028:964.314 - 2.079ms returns FALSE
+T8200 029:066.612 JLINK_IsHalted()
+T8200 029:070.164 - 3.550ms returns FALSE
+T8200 029:072.554 JLINK_IsHalted()
+T8200 029:076.332 - 3.780ms returns FALSE
+T3510 029:112.244 JLINK_IsHalted()
+T3510 029:115.878 - 3.633ms returns FALSE
+T3510 029:118.490 JLINK_IsHalted()
+T3510 029:120.916 - 2.423ms returns FALSE
+T8200 029:175.820 JLINK_IsHalted()
+T8200 029:178.044 - 2.223ms returns FALSE
+T8200 029:180.860 JLINK_IsHalted()
+T8200 029:182.842 - 1.982ms returns FALSE
+T8200 029:284.934 JLINK_IsHalted()
+T8200 029:288.186 - 3.250ms returns FALSE
+T8200 029:290.048 JLINK_IsHalted()
+T8200 029:294.538 - 4.486ms returns FALSE
+T8200 029:394.854 JLINK_IsHalted()
+T8200 029:398.112 - 3.258ms returns FALSE
+T8200 029:400.230 JLINK_IsHalted()
+T8200 029:402.212 - 1.979ms returns FALSE
+T8200 029:503.930 JLINK_IsHalted()
+T8200 029:507.580 - 3.648ms returns FALSE
+T8200 029:509.628 JLINK_IsHalted()
+T8200 029:512.020 - 2.389ms returns FALSE
+T8200 029:613.178 JLINK_IsHalted()
+T8200 029:617.024 - 3.846ms returns FALSE
+T8200 029:619.626 JLINK_IsHalted()
+T8200 029:622.752 - 3.124ms returns FALSE
+T8200 029:642.004 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 029:644.852   CPU_ReadMem(4 bytes @ 0x20004AF0)
+T8200 029:648.106   Data:  03 00 00 00
+T8200 029:651.008 - 9.003ms returns 0
+T8200 029:652.596 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 029:653.990   CPU_ReadMem(4 bytes @ 0x20004A7C)
+T8200 029:656.028   Data:  D4 44 00 20
+T8200 029:657.828 - 5.231ms returns 0
+T8200 029:658.646 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 029:659.668    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 029:661.414   Data:  04 00 00 00
+T8200 029:662.556 - 3.910ms returns 0
+T8200 029:663.340 JLINK_ReadMem(0x20004AE8, 0x4 Bytes, ...)
+T8200 029:664.186   CPU_ReadMem(4 bytes @ 0x20004AE8)
+T8200 029:666.156   Data:  01 00 00 00
+T8200 029:667.786 - 4.444ms returns 0
+T8200 029:689.628 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 029:691.072   CPU_ReadMem(4 bytes @ 0x20004AF0)
+T8200 029:693.296   Data:  03 00 00 00
+T8200 029:694.960 - 5.332ms returns 0
+T8200 029:697.734 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 029:699.116   CPU_ReadMem(4 bytes @ 0x20004A7C)
+T8200 029:701.232   Data:  D4 44 00 20
+T8200 029:702.916 - 5.182ms returns 0
+T8200 029:704.086 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 029:705.140    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 029:706.516   Data:  04 00 00 00
+T8200 029:708.154 - 4.067ms returns 0
+T8200 029:708.986 JLINK_ReadMem(0x20004AE8, 0x4 Bytes, ...)
+T8200 029:709.936   CPU_ReadMem(4 bytes @ 0x20004AE8)
+T8200 029:711.844   Data:  01 00 00 00
+T8200 029:713.414 - 4.427ms returns 0
+T8200 029:714.522 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 029:715.766   CPU_ReadMem(4 bytes @ 0x20004AF0)
+T8200 029:717.766   Data:  03 00 00 00
+T8200 029:719.648 - 5.126ms returns 0
+T8200 029:720.644 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 029:721.402   CPU_ReadMem(4 bytes @ 0x20004A7C)
+T8200 029:722.884   Data:  D4 44 00 20
+T8200 029:724.180 - 3.536ms returns 0
+T8200 029:724.986 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 029:725.670    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 029:726.826   Data:  04 00 00 00
+T8200 029:728.076 - 3.090ms returns 0
+T8200 029:729.572 JLINK_ReadMem(0x20004AE8, 0x4 Bytes, ...)
+T8200 029:730.368   CPU_ReadMem(4 bytes @ 0x20004AE8)
+T8200 029:731.920   Data:  01 00 00 00
+T8200 029:733.564 - 3.991ms returns 0
+T8200 029:736.240 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 029:737.252   CPU_ReadMem(4 bytes @ 0x20004AF0)
+T8200 029:739.126   Data:  03 00 00 00
+T8200 029:740.634 - 4.392ms returns 0
+T8200 029:741.606 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 029:742.640   CPU_ReadMem(4 bytes @ 0x20004A7C)
+T8200 029:744.764   Data:  D4 44 00 20
+T8200 029:746.330 - 4.723ms returns 0
+T8200 029:747.308 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 029:748.650    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 029:750.358   Data:  04 00 00 00
+T8200 029:752.218 - 4.905ms returns 0
+T8200 029:753.642 JLINK_ReadMem(0x20004AE8, 0x4 Bytes, ...)
+T8200 029:754.870   CPU_ReadMem(4 bytes @ 0x20004AE8)
+T8200 029:757.212   Data:  01 00 00 00
+T8200 029:758.860 - 5.216ms returns 0
+T8200 029:761.536 JLINK_ReadMem(0x20004AF0, 0x4 Bytes, ...)
+T8200 029:762.662   CPU_ReadMem(4 bytes @ 0x20004AF0)
+T8200 029:764.854   Data:  03 00 00 00
+T8200 029:766.726 - 5.189ms returns 0
+T8200 029:768.054 JLINK_ReadMem(0x20004A7C, 0x4 Bytes, ...)
+T8200 029:769.164   CPU_ReadMem(4 bytes @ 0x20004A7C)
+T8200 029:771.084   Data:  D4 44 00 20
+T8200 029:772.870 - 4.816ms returns 0
+T8200 029:774.004 JLINK_ReadMem(0x00002980, 0x4 Bytes, ...)
+T8200 029:774.976    -- Read from flash cache (4 bytes @ 0x00002980)
+T8200 029:776.580   Data:  04 00 00 00
+T8200 029:778.016 - 4.013ms returns 0
+T8200 029:778.980 JLINK_ReadMem(0x20004AE8, 0x4 Bytes, ...)
+T8200 029:780.140   CPU_ReadMem(4 bytes @ 0x20004AE8)
+T8200 029:782.276   Data:  01 00 00 00
+T8200 029:783.940 - 4.961ms returns 0
+T46FC 030:197.194 JLINK_Halt()
+T46FC 030:201.952 - 4.757ms returns 0x00
+T46FC 030:203.876 JLINK_ReadReg(XPSR)
+T46FC 030:206.084   CPU_ReadMem(4 bytes @ 0xE000EE08)
+T46FC 030:210.630 - 6.753ms returns 0x61000000
+T46FC 030:221.814 JLINK_Close()
+T46FC 030:233.082   OnDisconnectTarget() start
+T46FC 030:238.960    J-Link Script File: Executing OnDisconnectTarget()
+T46FC 030:240.922   Restoring low power mode settings.
+T46FC 030:246.998   OnDisconnectTarget() end - Took 8.03ms
+T46FC 030:272.900 - 51.084ms
+T46FC 030:275.044
+T46FC 030:276.394   Closed
