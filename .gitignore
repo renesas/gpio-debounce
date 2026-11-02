@@ -5,7 +5,3 @@ bld
 
 /subprojects/*
 !/subprojects/*.wrap
-doxy_out
-
-# python stuff
-*.egg-info
