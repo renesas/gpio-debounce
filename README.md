@@ -1,4 +1,4 @@
-# Button Management
+# GPIO Debouncing
 
 This is a software module to help users debounce GPIOs. This README covers development steps. For documentation related to the module itself, see [debounce.md](./docs/debounce.md).
 
